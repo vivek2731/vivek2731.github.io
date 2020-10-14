@@ -1,0 +1,809 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script>
+        ! function(e, t, a, n, r) {
+            e[n] = e[n] || [], e[n].push({
+                "gtm.start": (new Date).getTime(),
+                event: "gtm.js"
+            });
+            var o = t.getElementsByTagName(a)[0],
+                i = t.createElement(a);
+            i.async = !0, i.src = "https://www.googletagmanager.com/gtm.js?id=GTM-57PRWKJ", o.parentNode.insertBefore(i, o)
+        }(window, document, "script", "dataLayer"),
+        function() {
+            var e = window.analytics = window.analytics || [];
+            if (!e.initialize)
+                if (e.invoked) window.console && console.error && console.error("Segment snippet included twice.");
+                else {
+                    e.invoked = !0, e.methods = ["trackSubmit", "trackClick", "trackLink", "trackForm", "pageview", "identify", "reset", "group", "track", "ready", "alias", "debug", "page", "once", "off", "on"], e.factory = function(t) {
+                        return function() {
+                            var a = Array.prototype.slice.call(arguments);
+                            return a.unshift(t), e.push(a), e
+                        }
+                    };
+                    for (var t = 0; t < e.methods.length; t++) {
+                        var a = e.methods[t];
+                        e[a] = e.factory(a)
+                    }
+                    e.load = function(t, a) {
+                        var n = document.createElement("script");
+                        n.type = "text/javascript", n.async = !0, n.src = "https://cdn.segment.com/analytics.js/v1/" + t + "/analytics.min.js";
+                        var r = document.getElementsByTagName("script")[0];
+                        r.parentNode.insertBefore(n, r), e._loadOptions = a
+                    }, e.SNIPPET_VERSION = "4.1.0", e.load("6FD7xXGwt5lWaidtQ6mPcWfVGEGDl1gH"), e.page()
+                }
+        }();
+    </script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <base href="/">
+    <title>Vivek Pokkula — Finance Student</title>
+    <meta name="description" content="Vivek is a Finance student.">
+    <meta itemprop="name" content="Vivek Pokkula — Finance Student">
+    <meta itemprop="description" content="Vivek is a Finance student.">
+    <meta itemprop="image" content="https://hector.me/opengraph.jpg">
+    <meta property="og:url" content="https://hector.me">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Vivek Pokkula — Finance Student">
+    <meta property="og:description" content="Vivek is a Finance student.">
+    <meta property="og:image" content="https://hector.me/opengraph.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Vivek Pokkula — Finance Student">
+    <meta name="twitter:description" content="Vivek is a Finance student.">
+    <meta name="twitter:image" content="https://hector.me/opengraph.jpg">
+    <style>* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+
+ol,
+ul {
+    list-style: none
+}
+
+a {
+    transition: color .2s ease-in-out, background .2s ease-in-out
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #282b30;
+    font-family: Barlow, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.6;
+    min-height: 100vh;
+    background: #fff;
+    -webkit-font-smoothing: antialiased
+}
+
+@media (prefers-color-scheme:dark) {
+    body {
+        color: #fff;
+        background: #191b1f
+    }
+}
+
+footer,
+header,
+section {
+    position: relative;
+    width: 100%;
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 0 80px
+}
+
+@media (min-width:1800px) {
+    footer,
+    header,
+    section {
+        max-width: 1320px
+    }
+}
+
+@media (max-width:920px) {
+    footer,
+    header,
+    section {
+        padding: 0 60px
+    }
+}
+
+@media (max-width:760px) {
+    footer,
+    header,
+    section {
+        padding: 0 40px
+    }
+}
+
+@media (max-width:500px) {
+    footer,
+    header,
+    section {
+        padding: 0 30px
+    }
+}
+
+header {
+    padding-top: 68px;
+    padding-bottom: 40px
+}
+
+@media (max-width:920px) {
+    header {
+        padding-top: 38px;
+        padding-bottom: 30px
+    }
+}
+
+@media (max-width:760px) {
+    header {
+        padding-top: 28px;
+        padding-bottom: 20px
+    }
+}
+
+header img#avatar {
+    position: relative;
+    display: block;
+    border-radius: 50%;
+    box-shadow: 0 0 1px rgba(40, 43, 48, .4), 0 1px 4px rgba(40, 43, 48, .1)
+}
+
+@media (max-width:920px) {
+    header img#avatar {
+        top: 6px
+    }
+}
+
+@media (prefers-color-scheme:dark) {
+    header img#avatar {
+        opacity: .8
+    }
+}
+
+header h1 {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 1.2;
+    padding: 32px 0 24px
+}
+
+header p {
+    font-size: 18px;
+    line-height: 1.6
+}
+
+@media (min-width:1800px) {
+    header p {
+        max-width: 820px
+    }
+}
+
+header p a {
+    display: inline-block;
+    font-weight: 500;
+    vertical-align: baseline;
+    padding: 0 4px;
+    margin: 0;
+    border-radius: 6px;
+    text-decoration: none;
+    line-height: 1.4
+}
+
+header p a.utexas {
+    color: #bf5700;
+    background: rgba(243, 93, 73, 0.03)
+}
+
+header p a.utexas:hover {
+    background: rgba(191, 87, 0, .1)
+}
+
+header p a.utexas svg {
+    display: block;
+    margin-left: 3px;
+    margin-right: 6px;
+    filter: drop-shadow(0 1px 2px rgba(40, 43, 48, .2))
+}
+
+header p a.replay {
+    background: rgba(54, 85, 209, .03)
+}
+
+header p a.replay:hover {
+    background: rgba(54, 85, 209, .1)
+}
+
+header p a.replay span {
+    position: absolute;
+    opacity: 0
+}
+
+header p a.replay img {
+    display: inline-flex;
+    margin-left: 3px;
+    margin-right: 2px
+}
+
+header p a.heroku {
+    color: #9272b6;
+    background: rgba(146, 114, 182, .03)
+}
+
+header p a.heroku:hover {
+    background: rgba(146, 114, 182, .1)
+}
+
+header p a.salesforce {
+    color: #00a1e0;
+    background: rgba(0, 161, 224, .03)
+}
+
+header p a.salesforce:hover {
+    background: rgba(0, 161, 224, .1)
+}
+
+header p a.riot {
+    color: #de421e;
+    background: rgba(222, 66, 30, .03)
+}
+
+header p a.riot:hover {
+    background: rgba(222, 66, 30, .1)
+}
+
+header p:first-of-type {
+    font-size: 22px;
+    margin-bottom: 24px
+}
+
+header p:first-of-type a {
+    display: inline-flex;
+    align-items: center;
+    vertical-align: bottom;
+    padding: 2px 5px 2px 3px;
+    margin: -2px 0;
+    border-radius: 10px;
+    line-height: 1.6
+}
+
+header p:first-of-type img {
+    margin-right: 8px;
+    border-radius: 6px
+}
+
+header p:last-of-type {
+    margin-top: 24px
+}
+
+header ul {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 30px -10px 0
+}
+
+header ul li {
+    margin: 10px
+}
+
+header ul li picture {
+    display: block;
+    height: 26px
+}
+
+header ul li.twitter a {
+    box-shadow: 0 0 0 1px rgba(0, 145, 255, .2)
+}
+
+header ul li.twitter a:hover {
+    background: rgba(0, 145, 255, .1)
+}
+
+header ul li.instagram a {
+    box-shadow: 0 0 0 1px rgba(198, 104, 207, .2)
+}
+
+header ul li.instagram a:hover {
+    background: rgba(198, 104, 207, .1)
+}
+
+header ul li.medium a {
+    box-shadow: 0 0 0 1px rgba(33, 137, 22, .2)
+}
+
+header ul li.medium a:hover {
+    background: rgba(33, 137, 22, .1)
+}
+
+header ul li.linkedin a {
+    box-shadow: 0 0 0 1px rgba(26, 118, 180, .1)
+}
+
+@media (prefers-color-scheme:dark) {
+    header ul li.linkedin a {
+        box-shadow: 0 0 0 1px hsla(204, 75%, 40%, .1)
+    }
+    header ul li.linkedin a svg path {
+        fill: #fff
+    }
+}
+
+header ul li.linkedin a:hover {
+    background: rgba(26, 118, 180, .05)
+}
+
+@media (prefers-color-scheme:dark) {
+    header ul li.linkedin a:hover {
+        background: hsla(204, 75%, 40%, .05)
+    }
+}
+
+header ul li a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    border-radius: 50%;
+    width: 48px;
+    height: 48px;
+    transition: background .2s ease-in-out, box-shadow .2s ease-in-out
+}
+
+@media (prefers-color-scheme:dark) {
+    header ul li a {
+        box-shadow: inset 0 0 0 1px hsla(0, 0%, 100%, .1);
+        background: hsla(0, 0%, 100%, .03)
+    }
+}
+
+section {
+    padding-bottom: 40px
+}
+
+section h2 {
+    width: 100%;
+    font-weight: 500;
+    margin-bottom: 6px
+}
+
+section h2+p {
+    font-size: 18px;
+    width: 100%;
+    margin-bottom: 40px
+}
+
+@media (max-width:920px) {
+    section h2+p {
+        margin-bottom: 30px
+    }
+}
+
+.projects {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px
+}
+
+@media (min-width:1800px) {
+    .projects {
+        grid-template-columns: 1fr 1fr 1fr
+    }
+}
+
+@media (max-width:760px) {
+    .projects {
+        grid-template-columns: 1fr;
+        row-gap: 20px
+    }
+}
+
+article {
+    display: flex;
+    align-items: stretch;
+    text-align: center
+}
+
+article a {
+    color: inherit;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 30px 20px;
+    text-decoration: none;
+    border-radius: 20px;
+    box-shadow: inset 0 0 0 1px rgba(40, 43, 48, .065);
+    background: #fbfbfb
+}
+
+@media (prefers-color-scheme:dark) {
+    article a {
+        box-shadow: inset 0 0 0 1px hsla(0, 0%, 100%, .1);
+        background: hsla(0, 0%, 100%, .03)
+    }
+}
+
+article a img {
+    margin-bottom: 6px;
+    transition: opacity .2s ease-in-out
+}
+
+@media (prefers-color-scheme:dark) {
+    article a img {
+        opacity: .9
+    }
+}
+
+article a:hover img {
+    opacity: 1
+}
+
+article a h3 {
+    font-size: 22px;
+    font-weight: 700
+}
+
+article a p {
+    font-size: 18px
+}
+
+@media (min-width:1800px) {
+    article a p {
+        padding: 0 40px
+    }
+}
+
+article a span {
+    display: block;
+    font-size: 16px;
+    font-weight: 500;
+    transition: color .2s ease-in-out;
+    white-space: nowrap
+}
+
+article.umbra a span {
+    color: #e165fd
+}
+
+article.umbra a:hover {
+    color: #790294;
+    background: rgba(225, 101, 253, .1)
+}
+
+@media (prefers-color-scheme:dark) {
+    article.umbra a:hover {
+        color: #fff
+    }
+}
+
+article.umbra a:hover span {
+    color: rgba(225, 101, 253, .8)
+}
+
+article.stand a span {
+    color: #2bbfc9
+}
+
+article.stand a:hover {
+    color: #071f21;
+    background: rgba(43, 191, 201, .1)
+}
+
+@media (prefers-color-scheme:dark) {
+    article.stand a:hover {
+        color: #fff
+    }
+}
+
+article.stand a:hover span {
+    color: rgba(43, 191, 201, .8)
+}
+
+article.hypest-atom a span {
+    color: #5cb06e
+}
+
+article.hypest-atom a:hover {
+    color: #152b1a;
+    background: rgba(92, 176, 110, .1)
+}
+
+@media (prefers-color-scheme:dark) {
+    article.hypest-atom a:hover {
+        color: #fff
+    }
+}
+
+article.hypest-atom a:hover span {
+    color: rgba(92, 176, 110, .8)
+}
+
+article.candy a span {
+    color: #5b54f8
+}
+
+article.candy a:hover {
+    color: #0a057b;
+    background: rgba(91, 84, 248, .07)
+}
+
+@media (prefers-color-scheme:dark) {
+    article.candy a:hover {
+        color: #fff
+    }
+}
+
+article.candy a:hover span {
+    color: rgba(91, 84, 248, .8)
+}
+
+article.wavey a span {
+    color: #ff3c6d
+}
+
+article.wavey a:hover {
+    color: #6f001c;
+    background: rgba(255, 60, 109, .07)
+}
+
+@media (prefers-color-scheme:dark) {
+    article.wavey a:hover {
+        color: #fff
+    }
+}
+
+article.wavey a:hover span {
+    color: rgba(255, 60, 109, .8)
+}
+
+article.hypest a span {
+    color: #e180ca
+}
+
+article.hypest a:hover {
+    color: #791c63;
+    background: rgba(225, 128, 202, .1)
+}
+
+@media (prefers-color-scheme:dark) {
+    article.hypest a:hover {
+        color: #fff
+    }
+}
+
+article.hypest a:hover span {
+    color: rgba(225, 128, 202, .8)
+}
+
+article.quids a span {
+    color: #3fb5eb
+}
+
+article.quids a:hover {
+    color: #093d55;
+    background: rgba(63, 181, 235, .1)
+}
+
+@media (prefers-color-scheme:dark) {
+    article.quids a:hover {
+        color: #fff
+    }
+}
+
+article.quids a:hover span {
+    color: rgba(63, 181, 235, .8)
+}
+
+article.xpal a span {
+    color: #219aff
+}
+
+article.xpal a:hover {
+    color: #002e54;
+    background: rgba(33, 154, 255, .1)
+}
+
+@media (prefers-color-scheme:dark) {
+    article.xpal a:hover {
+        color: #fff
+    }
+}
+
+article.xpal a:hover span {
+    color: rgba(33, 154, 255, .8)
+}
+
+.end {
+    margin-top: 30px;
+    padding: 50px 0 60px;
+    box-shadow: inset 0 1px 0 rgba(171, 182, 193, .15);
+    background: rgba(171, 182, 193, .05)
+}
+
+@media (prefers-color-scheme:dark) {
+    .end {
+        background: hsla(0, 0%, 100%, .03)
+    }
+}
+
+@media (max-width:920px) {
+    .end {
+        margin-top: 0;
+        padding: 30px 0 40px
+    }
+}
+
+.end p {
+    padding: 11px 0
+}
+
+footer {
+    font-size: 16px
+}
+
+.four-oh-four {
+    text-align: center
+}
+
+.four-oh-four h1 {
+    font-size: 38px;
+    font-weight: 700;
+    line-height: 1.2;
+    padding: 26px 0 12px
+}
+
+.four-oh-four h2 {
+    font-size: 24px;
+    font-weight: 500
+}
+
+.four-oh-four h2 small {
+    font-size: 16px;
+    font-weight: 400;
+    display: block;
+    color: #abb6c1
+}
+
+.four-oh-four p {
+    margin: 24px 0
+}
+
+.four-oh-four p a {
+    font-weight: 500;
+    font-size: 18px;
+    color: #0091ff;
+    text-decoration: none
+}
+
+.four-oh-four p a:hover {
+    text-decoration: underline
+}
+
+.four-oh-four ul {
+    display: flex;
+    justify-content: center
+}
+
+.four-oh-four ul li {
+    margin: 10px
+}
+
+.four-oh-four ul li picture {
+    display: block;
+    height: 26px
+}
+
+.four-oh-four ul li.twitter a {
+    box-shadow: 0 0 0 1px rgba(0, 145, 255, .2)
+}
+
+.four-oh-four ul li.twitter a:hover {
+    background: rgba(0, 145, 255, .1)
+}
+
+.four-oh-four ul li.instagram a {
+    box-shadow: 0 0 0 1px rgba(198, 104, 207, .2)
+}
+
+.four-oh-four ul li.instagram a:hover {
+    background: rgba(198, 104, 207, .1)
+}
+
+.four-oh-four ul li.medium a {
+    box-shadow: 0 0 0 1px rgba(33, 137, 22, .2)
+}
+
+.four-oh-four ul li.medium a:hover {
+    background: rgba(33, 137, 22, .1)
+}
+
+.four-oh-four ul li.linkedin a {
+    box-shadow: 0 0 0 1px rgba(26, 118, 180, .1)
+}
+
+@media (prefers-color-scheme:dark) {
+    .four-oh-four ul li.linkedin a {
+        box-shadow: 0 0 0 1px hsla(204, 75%, 40%, .1)
+    }
+}
+
+.four-oh-four ul li.linkedin a:hover {
+    background: rgba(26, 118, 180, .05)
+}
+
+@media (prefers-color-scheme:dark) {
+    .four-oh-four ul li.linkedin a:hover {
+        background: hsla(204, 75%, 40%, .05)
+    }
+}
+
+.four-oh-four ul li a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    border-radius: 50%;
+    width: 48px;
+    height: 48px;
+    transition: background .2s ease-in-out, box-shadow .2s ease-in-out
+}
+
+@media (prefers-color-scheme:dark) {
+    .four-oh-four ul li a {
+        box-shadow: inset 0 0 0 1px hsla(0, 0%, 100%, .1);
+        background: hsla(0, 0%, 100%, .03)
+    }
+}</style>  
+    <link href="https://fonts.googleapis.com/css?family=Barlow:400,500,700" rel="stylesheet">
+    <link href="/favicon.1010cea6.ico" rel="shortcut icon">
+    <link href="/favicon-120.7b91759b.png" rel="apple-touch-icon-precomposed" sizes="120x120">
+    <link href="/favicon-152.dac91e72.png" rel="apple-touch-icon-precomposed" sizes="152x152">
+    <link href="/favicon-167.af01cb3c.png" rel="apple-touch-icon-precomposed" sizes="167x167">
+    <link href="/favicon-180.b9c189a1.png" rel="apple-touch-icon-precomposed" sizes="180x180">
+</head>
+
+<body> <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-57PRWKJ" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <header> <img id="avatar" src="http://www.simpleimageresizer.com/_uploads/photos/f5b91b52/2e2445f702541073c9c2fa0942a7dec6-sticker_90x90.png" srcset="https://d33wubrfki0l68.cloudfront.net/dd590b2f843327cd2931a6e3c75f5b7692ba28fc/300e0/avatar@2x.7e5639fc.jpg 2x,https://d33wubrfki0l68.cloudfront.net/963e98db5874f9b8b8963469154f049527ebe1f0/b4a42/avatar@3x.57b7b98f.jpg 3x"
+            width="90" height="90">
+        <h1>Vivek is a Finance student.</h1>
+        <p> I'm currently at <a href="https://utexas.edu" class="utexas" target="_blank"> UT Austin </a>            — in the McCombs School of Business. </p>
+        <p> Before that he designed developer experiences at <a href="https://heroku.com/home" class="heroku" target="_blank"> Heroku </a> and <a href="https://salesforce.com/" class="salesforce" target="_blank"> Salesforce </a>, and prior to that co-founded
+            a startup named <a href="https://riothq.com" class="riot" target="_blank"> Riot </a>, consulting with companies and also designing, building and publishing popular web clients, native macOS tools and mobile apps. </p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc semper elit at ex lobortis aliquam. Duis accumsan convallis ipsum, ut rhoncus eros tristique eget.  <a href="https://replay.software" class="replay" target="_blank"> <svg width="67" height="13"><path fill="#3655D1" d="M0 0h4.91c2.952 0 4.784 1.701 4.784 3.86 0 1.908-.837 2.921-2.13 3.559l-.096.046 2.684 5.408V13H6.997L4.72 8.227H2.95V13H0V0h4.91H0zm21.5 0v2.438h-5.75V5.28h4.859v2.44h-4.86v2.843h5.75V13h-8.701V0h8.701zm2.442 0h5.038c3.053 0 4.783 1.828 4.783 4.316 0 2.424-1.676 4.036-4.639 4.087l-.144.001h-2.087V13h-2.951V0h5.038-5.038zm14.757 0v10.563h5.267V13h-8.218V0h2.951zm18.807 0l2.748 5.535L63 0h3.18l-4.45 8.15V13h-2.951V8.15L54.325 0h3.18zm-4.723 0v13L41.82 6.5 52.783 0zm-2.436 4.278L46.599 6.5l3.748 2.222V4.278zm-21.262-1.84h-2.192v3.554h2.087c1.323-.025 1.832-.812 1.832-1.803 0-.914-.482-1.732-1.727-1.752zm-24.174 0H2.95v3.376h1.96c1.246 0 1.857-.609 1.857-1.675 0-1.06-.6-1.665-1.751-1.7l-.106-.002z"/></svg> <span>Replay</span> </a>            </p>
+        <ul>
+            <li class="twitter"> <a href="https://twitter.com/pocoola" target="_blank"> <svg viewBox="0 0 26 23" width="26" height="26"><path fill="#2C99F8" fill-rule="evenodd" d="M8.177 22.292c9.812 0 15.177-8.335 15.177-15.563 0-.237-.005-.472-.015-.707A11.004 11.004 0 0026 3.19c-.956.435-1.984.729-3.063.86a5.467 5.467 0 002.345-3.025 10.539 10.539 0 01-3.387 1.328A5.268 5.268 0 0018.001.625c-2.946 0-5.334 2.45-5.334 5.47 0 .428.046.846.138 1.246C8.37 7.112 4.44 4.936 1.809 1.626a5.562 5.562 0 00-.722 2.75c0 1.897.942 3.573 2.374 4.553a5.196 5.196 0 01-2.416-.685v.07c0 2.65 1.838 4.861 4.279 5.362a5.217 5.217 0 01-2.41.094c.68 2.173 2.649 3.755 4.984 3.8A10.534 10.534 0 010 19.834a14.83 14.83 0 008.177 2.457"/></svg> </a>                </li>
+            <li class="instagram"> <a href="https://instagram.com/vivekpokkula" target="_blank"> <svg width="26" height="26"><path fill="#C668CF" d="M13.001 0c-3.53 0-3.973.015-5.36.079C6.257.142 5.312.36 4.486.683a6.366 6.366 0 00-2.303 1.499 6.382 6.382 0 00-1.5 2.302C.36 5.311.14 6.256.077 7.64.016 9.026 0 9.47 0 13c0 3.53.016 3.972.079 5.359.063 1.384.282 2.329.604 3.155a6.37 6.37 0 001.499 2.303 6.366 6.366 0 002.302 1.5c.827.322 1.772.541 3.156.604C9.026 25.985 9.47 26 13 26c3.53 0 3.972-.015 5.359-.079 1.384-.063 2.33-.282 3.157-.604a6.36 6.36 0 002.301-1.5 6.382 6.382 0 001.5-2.303c.32-.826.54-1.771.604-3.155.063-1.386.079-1.828.079-5.359 0-3.53-.016-3.974-.079-5.36-.065-1.384-.284-2.329-.604-3.156a6.38 6.38 0 00-1.5-2.302 6.354 6.354 0 00-2.302-1.5c-.829-.321-1.774-.54-3.158-.603C16.97.015 16.529 0 12.997 0h.004zm-1.186 2.17H13c3.529 0 3.947.013 5.34.076 1.289.059 1.988.274 2.454.455a4.09 4.09 0 011.518.989c.463.462.75.903.99 1.52.18.465.396 1.164.454 2.453.064 1.393.077 1.812.077 5.339s-.013 3.945-.077 5.339c-.059 1.288-.274 1.988-.455 2.453a4.086 4.086 0 01-.989 1.518 4.087 4.087 0 01-1.518.989c-.466.181-1.165.396-2.454.455-1.393.063-1.811.077-5.34.077s-3.947-.014-5.34-.077c-1.288-.06-1.988-.275-2.454-.456a4.093 4.093 0 01-1.52-.988 4.096 4.096 0 01-.988-1.52c-.181-.465-.397-1.164-.455-2.453-.064-1.393-.076-1.811-.076-5.34 0-3.53.012-3.946.076-5.34.059-1.288.274-1.988.455-2.453a4.09 4.09 0 01.989-1.52 4.101 4.101 0 011.52-.99c.465-.181 1.165-.396 2.453-.455 1.22-.055 1.692-.072 4.155-.074v.003zm7.956 2.164a1.354 1.354 0 100 2.709 1.354 1.354 0 000-2.71zM13 6.5a6.5 6.5 0 100 13.002A6.5 6.5 0 0013 6.5zm0 2.167a4.333 4.333 0 110 8.666 4.333 4.333 0 010-8.666z"/></svg> </a>                </li>
+            <li class="medium"> <a href="https://medium.com/@vivekpokkula" target="_blank"> <svg width="26" height="26"><path fill="#218916" d="M2.846 6.887c.03-.295-.083-.586-.303-.784l-2.24-2.7v-.403h6.958l5.378 11.795 4.728-11.795h6.633v.403l-1.916 1.837c-.165.126-.247.333-.213.538v13.498c-.034.204.048.411.213.537l1.871 1.837v.403h-9.412v-.403l1.939-1.882c.19-.19.19-.246.19-.537v-10.91l-5.389 13.688h-.728l-6.275-13.688v9.174c-.052.385.076.774.347 1.052l2.521 3.058v.404h-7.148v-.404l2.521-3.058c.27-.279.39-.67.325-1.052v-10.608z"/></svg> </a>                </li>
+            <li class="linkedin"> <a href="https://www.linkedin.com/in/vivekpokkula/" target="_blank"> <svg width="26" height="26"><path fill="#1a76b4" fill-rule="evenodd" d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z"/></svg> </a>                </li>
+        </ul>
+    </header>
+    <section>
+        <h2>Featured projects</h2>
+        <p>A collection of some side projects that have shipped recently.</p>
+        <div class="projects">
+            <article class="umbra"> <a href="https://utsenate.org/" target="_blank"> <img src="https://d33wubrfki0l68.cloudfront.net/af952349e4022ac5393c347ba5aa9dcb64038045/e392c/umbra.d61cffc2.png" srcset="https://d33wubrfki0l68.cloudfront.net/1dbde18ce4a849070d6403fd1b92ea0ba8fcd550/20635/umbra@2x.e3c83c65.png 2x,https://d33wubrfki0l68.cloudfront.net/4720631f8e086fd77b16290999c00ef57bfdd453/14f2c/umbra@3x.065d3401.png 3x" width="94" height="94"> <h3>Umbra</h3> <p> The missing app for Dark Mode <span>umbra.replay.software</span> </p> </a>                </article>
+            <article class="stand"> <a href="https://getstandapp.com" target="_blank"> <img src="https://d33wubrfki0l68.cloudfront.net/d02f519d55c03b144ce0ec118ea8720b5687df9b/fa13f/stand.eefe651a.png" srcset="https://d33wubrfki0l68.cloudfront.net/ef787fe89b0d95956ca1b8883d9fefa6e747ddc7/9efd0/stand@2x.59c178d4.png 2x,https://d33wubrfki0l68.cloudfront.net/71d889f4187c20e622b86715aba052df9a6242f6/0bce2/stand@3x.79304098.png 3x" width="94" height="94"> <h3>Stand 2</h3> <p> Simple reminders to stand up <span>getstandapp.com</span> </p> </a>                </article>
+            <article class="candy"> <a href="/candy"> <img src="https://d33wubrfki0l68.cloudfront.net/b08e3bfca4fa1c69ae0a80499db97dda53e6c803/07d0d/candy.b2bf70c4.png" srcset="https://d33wubrfki0l68.cloudfront.net/75dadf2c292aa9a07c8dcf28812de7bc92f8f5af/49eca/candy@2x.452d12cc.png 2x,https://d33wubrfki0l68.cloudfront.net/d3bb051c4c5e56b234b6f9225294269438f6a216/345b5/candy@3x.e50589ae.png 3x" width="94" height="94"> <h3>Candy</h3> <p> Wallpapers in 6 sweet flavors <span>hector.me/candy</span> </p> </a>                </article>
+            <article class="hypest-atom"> <a href="/hypest-atom"> <img src="https://d33wubrfki0l68.cloudfront.net/430015072b50e9e05bd119ed6c9fd2d29812da9e/1f4fa/hypest-atom.e7faa1ed.png" srcset="https://d33wubrfki0l68.cloudfront.net/1919b8cc379eebc527752083ac8d23293d2f6658/e05f1/hypest-atom@2x.6297404e.png 2x,https://d33wubrfki0l68.cloudfront.net/6abaf6c885b043fb231e8697b913619ddcca156b/ca455/hypest-atom@3x.fbe71247.png 3x" width="120" height="94"> <h3>Hypest for Atom</h3> <p> A pair of native themes for Atom <span>hector.me/hypest-atom</span> </p> </a>                </article>
+            <article class="wavey"> <a href="/wavey"> <img src="https://d33wubrfki0l68.cloudfront.net/df7879340341149edda2db8d8b7b71856aa8c055/44ed1/wavey.20c7da0c.png" srcset="https://d33wubrfki0l68.cloudfront.net/3e5ab5dd244974e6354cbeacdb00f252c212133a/f08e9/wavey@2x.4e1073a8.png 2x,https://d33wubrfki0l68.cloudfront.net/921263dd3c1a62eb89ce4988e81f7a2a1de753f8/bcd68/wavey@3x.15f9a205.png 3x" width="94" height="94"> <h3>Wavēy</h3> <p> Wallpapers for iOS & desktop <span>hector.me/wavey</span> </p> </a>                </article>
+            <article class="hypest"> <a href="/hypest"> <img src="https://d33wubrfki0l68.cloudfront.net/50332243bac279e6e422e464a2d4dbb2268719bd/8547a/hypest.bd49c7b3.png" srcset="https://d33wubrfki0l68.cloudfront.net/46f687404f9920c3e3e71a5c4f2178ad95455c38/bbc11/hypest@2x.04757878.png 2x,https://d33wubrfki0l68.cloudfront.net/7695452894c96cdd89d8a2b226442fbb2c1270e0/2d136/hypest@3x.58cc3d6a.png 3x" width="94" height="94"> <h3>Hypest</h3> <p> A beautiful theme plugin for Hyper <span>hector.me/hypest</span> </p> </a>                </article>
+            <article class="quids"> <a href="https://quidsapp.com" target="_blank"> <img src="https://d33wubrfki0l68.cloudfront.net/7a438b39eca09f58ff96e476a5009a7e966922fa/04caf/quids.875d8a6a.png" srcset="https://d33wubrfki0l68.cloudfront.net/37f46fc02f2cbdf5c8b60878cc5c86ed8cf2da90/27333/quids@2x.6e498ef9.png 2x,https://d33wubrfki0l68.cloudfront.net/789da3c767a2a05b6f8c99dab41a4d4bea6e60dc/7ae6b/quids@3x.a9a85aa2.png 3x" width="94" height="94"> <h3>Quids</h3> <p> Crypto management on your Mac <span>quidsapp.com</span> </p> </a>                </article>
+            <article class="xpal"> <a href="https://getxpal.com" target="_blank"> <img src="https://d33wubrfki0l68.cloudfront.net/4dbd9390af998db84647c501bf7f9be43f1e5545/006ed/xpal.5149eb52.png" srcset="https://d33wubrfki0l68.cloudfront.net/a9b279b10325e19b43d533af021643f0ccdce888/0c884/xpal@2x.1b85817f.png 2x,https://d33wubrfki0l68.cloudfront.net/81e8089298fedd998cda9a0f9eedef00517f3afe/b110b/xpal@3x.b1674202.png 3x" width="94" height="94"> <h3>xPal</h3> <p> Color asset tool for Sketch to Xcode <span>getxpal.com</span> </p> </a>                </article>
+        </div>
+    </section>
+    <div class="end">
+        <footer>
+            <p>&copy; 2020 Vivek Pokkula.</p>
+        </footer>
+    </div>
+</body>
+
+</html>
