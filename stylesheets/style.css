@@ -326,20 +326,20 @@ section h2+p {
     }
 }
 
-.projects {
+.navigation {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     gap: 30px
 }
 
 @media (min-width:1800px) {
-    .projects {
+    .navigation {
         grid-template-columns: 1fr 1fr 1fr
     }
 }
 
 @media (max-width:760px) {
-    .projects {
+    .navigation {
         grid-template-columns: 1fr;
         row-gap: 20px
     }
@@ -409,23 +409,23 @@ article a span {
     white-space: nowrap
 }
 
-article.umbra a span {
-    color: #e165fd
+article.texas a span {
+    color: #bf5700
 }
 
-article.umbra a:hover {
-    color: #790294;
-    background: rgba(225, 101, 253, .1)
+article.texas a:hover {
+    color: #bf5700;
+    background: rgba(191, 87, 0, .1)
 }
 
 @media (prefers-color-scheme:dark) {
-    article.umbra a:hover {
+    article.texas a:hover {
         color: #fff
     }
 }
 
-article.umbra a:hover span {
-    color: rgba(225, 101, 253, .8)
+article.texas a:hover span {
+    color: rgba(191, 87, 0, .8)
 }
 
 article.stand a span {
@@ -562,7 +562,7 @@ article.xpal a:hover span {
 }
 
 .end {
-    margin-top: auto;                                            /*Changed this line to change position of footer; changed from 30px*/
+    margin-top: 30px;                                            /*Changed this line to change position of footer; changed from 30px*/
     padding: 50px 0 60px;
     box-shadow: inset 0 1px 0 rgba(171, 182, 193, .15);
     background: rgba(171, 182, 193, .05)
@@ -613,7 +613,7 @@ footer {
 }
 
 .four-oh-four p {
-    margin: 24px 0
+    margin: 244px 0
 }
 
 .four-oh-four p a {
