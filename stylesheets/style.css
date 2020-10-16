@@ -284,7 +284,6 @@ header ul li.dribbble a:hover {
     background: rgba(236, 73, 137, .1)
 }
 
-
 @media (prefers-color-scheme:dark) {
     header ul li.linkedin a {
         box-shadow: 0 0 0 1px hsla(204, 75%, 40%, .1)
