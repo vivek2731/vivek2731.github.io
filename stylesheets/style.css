@@ -169,12 +169,12 @@ header p b.finance:hover {                                /*Remove this to get r
 }
 
 header p b.government {
-    color: #9cadb7;
-    background: rgba(156, 173, 183, .03)
+    color: #005f86;
+    background: rgba(0, 95, 134, .03)
 }
 
 header p b.government:hover {                             /*Remove this to get rid of hover effect*/
-    background: rgba(184, 196, 204, .1)
+    background: rgba(0, 146, 204, 0.1)
 }
 
 header p a.email {
