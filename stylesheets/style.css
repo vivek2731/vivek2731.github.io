@@ -1,0 +1,700 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+
+ol,
+ul {
+    list-style: none
+}
+
+a {
+    transition: color .2s ease-in-out, background .2s ease-in-out
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #282b30;
+    font-family: 'Libre Franklin', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.6;
+    min-height: 100vh;
+    background: #fff;
+    -webkit-font-smoothing: antialiased
+}
+
+@media (prefers-color-scheme:dark) {
+    body {
+        color: #fff;
+        background: #191b1f
+    }
+}
+
+footer,
+header,
+section {
+    position: relative;
+    width: 100%;
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 0 80px
+}
+
+@media (min-width:1800px) {
+    footer,
+    header,
+    section {
+        max-width: 1320px
+    }
+}
+
+@media (max-width:920px) {
+    footer,
+    header,
+    section {
+        padding: 0 60px
+    }
+}
+
+@media (max-width:760px) {
+    footer,
+    header,
+    section {
+        padding: 0 40px
+    }
+}
+
+@media (max-width:500px) {
+    footer,
+    header,
+    section {
+        padding: 0 30px
+    }
+}
+
+header {
+    padding-top: 68px;
+    padding-bottom: 40px
+}
+
+@media (max-width:920px) {
+    header {
+        padding-top: 38px;
+        padding-bottom: 30px
+    }
+}
+
+@media (max-width:760px) {
+    header {
+        padding-top: 28px;
+        padding-bottom: 20px
+    }
+}
+
+header img#avatar {
+    position: relative;
+    display: block;
+    border-radius: 50%;
+    box-shadow: 0 0 1px rgba(40, 43, 48, .4), 0 1px 4px rgba(40, 43, 48, .1)
+}
+
+@media (max-width:920px) {
+    header img#avatar {
+        top: 6px
+    }
+}
+
+@media (prefers-color-scheme:dark) {
+    header img#avatar {
+        opacity: .8
+    }
+}
+
+header h1 {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 1.2;
+    padding: 32px 0 24px
+}
+
+header p {
+    font-size: 18px;
+    line-height: 1.6
+}
+
+@media (min-width:1800px) {
+    header p {
+        max-width: 820px
+    }
+}
+
+header p a {
+    display: inline-block;
+    font-weight: 500;
+    vertical-align: baseline;
+    padding: 0 4px;
+    margin: 0;
+    border-radius: 6px;
+    text-decoration: none;
+    line-height: 1.4
+}
+
+header p a.utexas {
+    color: #bf5700;
+    background: rgba(243, 93, 73, 0.03)
+}
+
+header p a.utexas:hover {
+    background: rgba(191, 87, 0, .1)
+}
+
+header p a.utexas svg {
+    display: block;
+    margin-left: 3px;
+    margin-right: 6px;
+    filter: drop-shadow(0 1px 2px rgba(40, 43, 48, .2))
+}
+
+header p a.email {
+    color: #D44638;
+    background: rgba(54, 85, 209, .03)
+}
+
+header p a.email:hover {
+    background: rgba(212, 70, 56, .1)
+}
+
+header p a.email span {
+    position: absolute;
+    opacity: 0
+}
+
+header p a.email img {
+    display: inline-flex;
+    margin-left: 3px;
+    margin-right: 2px
+}
+
+header p:first-of-type {
+    font-size: 22px;
+    margin-bottom: 24px
+}
+
+header p:first-of-type a {
+    display: inline-flex;
+    align-items: center;
+    vertical-align: bottom;
+    padding: 2px 5px 2px 3px;
+    margin: -2px 0;
+    border-radius: 10px;
+    line-height: 1.6
+}
+
+header p:first-of-type img {
+    margin-right: 8px;
+    border-radius: 6px
+}
+
+header p:last-of-type {
+    margin-top: 24px
+}
+
+header ul {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 30px -10px 0
+}
+
+header ul li {
+    margin: 10px
+}
+
+header ul li picture {
+    display: block;
+    height: 26px
+}
+
+header ul li.linkedin a {
+    box-shadow: 0 0 0 1px rgba(26, 118, 180, .1)
+}
+
+header ul li.linkedin a:hover {
+    background: rgba(26, 118, 180, .1)
+}
+
+header ul li.medium a {
+    box-shadow: 0 0 0 1px rgba(33, 137, 22, .2)
+}
+
+header ul li.medium a:hover {
+    background: rgba(33, 137, 22, .1)
+}
+
+header ul li.gmail a{
+    box-shadow: 0 0 0 1px rgba(212, 70, 56, .2)
+}
+
+header ul li.gmail a:hover {
+    background: rgba(212, 70, 56, .1)
+}
+
+header ul li.twitter a {
+    box-shadow: 0 0 0 1px rgba(0, 145, 255, .2)
+}
+
+header ul li.twitter a:hover {
+    background: rgba(0, 145, 255, .1)
+}
+
+header ul li.instagram a {
+    box-shadow: 0 0 0 1px rgba(198, 104, 207, .2)
+}
+
+header ul li.instagram a:hover {
+    background: rgba(198, 104, 207, .1)
+}
+
+header ul li.dribbble a {
+    box-shadow: 0 0 0 1px rgba(236, 73, 137, .2)
+}
+
+header ul li.dribbble a:hover {
+    background: rgba(236, 73, 137, .1)
+}
+
+
+@media (prefers-color-scheme:dark) {
+    header ul li.linkedin a {
+        box-shadow: 0 0 0 1px hsla(204, 75%, 40%, .1)
+    }
+    header ul li.linkedin a svg path {
+        fill: #fff
+    }
+}
+
+header ul li.linkedin a:hover {
+    background: rgba(26, 118, 180, .05)
+}
+
+@media (prefers-color-scheme:dark) {
+    header ul li.linkedin a:hover {
+        background: hsla(204, 75%, 40%, .1)
+    }
+}
+
+header ul li a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    border-radius: 50%;
+    width: 48px;
+    height: 48px;
+    transition: background .2s ease-in-out, box-shadow .2s ease-in-out
+}
+
+@media (prefers-color-scheme:dark) {
+    header ul li a {
+        box-shadow: inset 0 0 0 1px hsla(0, 0%, 100%, .1);
+        background: hsla(0, 0%, 100%, .03)
+    }
+}
+
+section {
+    padding-bottom: 40px
+}
+
+section h2 {
+    width: 100%;
+    font-weight: 500;
+    margin-bottom: 6px
+}
+
+section h2+p {
+    font-size: 18px;
+    width: 100%;
+    margin-bottom: 40px
+}
+
+@media (max-width:920px) {
+    section h2+p {
+        margin-bottom: 30px
+    }
+}
+
+.projects {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px
+}
+
+@media (min-width:1800px) {
+    .projects {
+        grid-template-columns: 1fr 1fr 1fr
+    }
+}
+
+@media (max-width:760px) {
+    .projects {
+        grid-template-columns: 1fr;
+        row-gap: 20px
+    }
+}
+
+article {
+    display: flex;
+    align-items: stretch;
+    text-align: center
+}
+
+article a {
+    color: inherit;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 30px 20px;
+    text-decoration: none;
+    border-radius: 20px;
+    box-shadow: inset 0 0 0 1px rgba(40, 43, 48, .065);
+    background: #fbfbfb
+}
+
+@media (prefers-color-scheme:dark) {
+    article a {
+        box-shadow: inset 0 0 0 1px hsla(0, 0%, 100%, .1);
+        background: hsla(0, 0%, 100%, .03)
+    }
+}
+
+article a img {
+    margin-bottom: 6px;
+    transition: opacity .2s ease-in-out
+}
+
+@media (prefers-color-scheme:dark) {
+    article a img {
+        opacity: .9
+    }
+}
+
+article a:hover img {
+    opacity: 1
+}
+
+article a h3 {
+    font-size: 22px;
+    font-weight: 700
+}
+
+article a p {
+    font-size: 18px
+}
+
+@media (min-width:1800px) {
+    article a p {
+        padding: 0 40px
+    }
+}
+
+article a span {
+    display: block;
+    font-size: 16px;
+    font-weight: 500;
+    transition: color .2s ease-in-out;
+    white-space: nowrap
+}
+
+article.umbra a span {
+    color: #e165fd
+}
+
+article.umbra a:hover {
+    color: #790294;
+    background: rgba(225, 101, 253, .1)
+}
+
+@media (prefers-color-scheme:dark) {
+    article.umbra a:hover {
+        color: #fff
+    }
+}
+
+article.umbra a:hover span {
+    color: rgba(225, 101, 253, .8)
+}
+
+article.stand a span {
+    color: #2bbfc9
+}
+
+article.stand a:hover {
+    color: #071f21;
+    background: rgba(43, 191, 201, .1)
+}
+
+@media (prefers-color-scheme:dark) {
+    article.stand a:hover {
+        color: #fff
+    }
+}
+
+article.stand a:hover span {
+    color: rgba(43, 191, 201, .8)
+}
+
+article.hypest-atom a span {
+    color: #5cb06e
+}
+
+article.hypest-atom a:hover {
+    color: #152b1a;
+    background: rgba(92, 176, 110, .1)
+}
+
+@media (prefers-color-scheme:dark) {
+    article.hypest-atom a:hover {
+        color: #fff
+    }
+}
+
+article.hypest-atom a:hover span {
+    color: rgba(92, 176, 110, .8)
+}
+
+article.candy a span {
+    color: #5b54f8
+}
+
+article.candy a:hover {
+    color: #0a057b;
+    background: rgba(91, 84, 248, .07)
+}
+
+@media (prefers-color-scheme:dark) {
+    article.candy a:hover {
+        color: #fff
+    }
+}
+
+article.candy a:hover span {
+    color: rgba(91, 84, 248, .8)
+}
+
+article.wavey a span {
+    color: #ff3c6d
+}
+
+article.wavey a:hover {
+    color: #6f001c;
+    background: rgba(255, 60, 109, .07)
+}
+
+@media (prefers-color-scheme:dark) {
+    article.wavey a:hover {
+        color: #fff
+    }
+}
+
+article.wavey a:hover span {
+    color: rgba(255, 60, 109, .8)
+}
+
+article.hypest a span {
+    color: #e180ca
+}
+
+article.hypest a:hover {
+    color: #791c63;
+    background: rgba(225, 128, 202, .1)
+}
+
+@media (prefers-color-scheme:dark) {
+    article.hypest a:hover {
+        color: #fff
+    }
+}
+
+article.hypest a:hover span {
+    color: rgba(225, 128, 202, .8)
+}
+
+article.quids a span {
+    color: #3fb5eb
+}
+
+article.quids a:hover {
+    color: #093d55;
+    background: rgba(63, 181, 235, .1)
+}
+
+@media (prefers-color-scheme:dark) {
+    article.quids a:hover {
+        color: #fff
+    }
+}
+
+article.quids a:hover span {
+    color: rgba(63, 181, 235, .8)
+}
+
+article.xpal a span {
+    color: #219aff
+}
+
+article.xpal a:hover {
+    color: #002e54;
+    background: rgba(33, 154, 255, .1)
+}
+
+@media (prefers-color-scheme:dark) {
+    article.xpal a:hover {
+        color: #fff
+    }
+}
+
+article.xpal a:hover span {
+    color: rgba(33, 154, 255, .8)
+}
+
+.end {
+    margin-top: auto;                                            /*Changed this line to change position of footer; changed from 30px*/
+    padding: 50px 0 60px;
+    box-shadow: inset 0 1px 0 rgba(171, 182, 193, .15);
+    background: rgba(171, 182, 193, .05)
+}
+
+@media (prefers-color-scheme:dark) {
+    .end {
+        background: hsla(0, 0%, 100%, .03)
+    }
+}
+
+@media (max-width:920px) {
+    .end {
+        margin-top: 0;
+        padding: 30px 0 40px
+    }
+}
+
+.end p {
+    padding: 11px 0
+}
+
+footer {
+    font-size: 16px
+}
+
+.four-oh-four {
+    text-align: center
+}
+
+.four-oh-four h1 {
+    font-size: 38px;
+    font-weight: 700;
+    line-height: 1.2;
+    padding: 26px 0 12px
+}
+
+.four-oh-four h2 {
+    font-size: 24px;
+    font-weight: 500
+}
+
+.four-oh-four h2 small {
+    font-size: 16px;
+    font-weight: 400;
+    display: block;
+    color: #abb6c1
+}
+
+.four-oh-four p {
+    margin: 24px 0
+}
+
+.four-oh-four p a {
+    font-weight: 500;
+    font-size: 18px;
+    color: #0091ff;
+    text-decoration: none
+}
+
+.four-oh-four p a:hover {
+    text-decoration: underline
+}
+
+.four-oh-four ul {
+    display: flex;
+    justify-content: center
+}
+
+.four-oh-four ul li {
+    margin: 10px
+}
+
+.four-oh-four ul li picture {
+    display: block;
+    height: 26px
+}
+
+.four-oh-four ul li.linkedin a {
+    box-shadow: 0 0 0 1px rgba(26, 118, 180, .1)
+}
+
+.four-oh-four ul li.linkedin a:hover {
+    background: rgba(26, 118, 180, .1)
+}
+
+.four-oh-four ul li.medium a {
+    box-shadow: 0 0 0 1px rgba(33, 137, 22, .2)
+}
+
+.four-oh-four ul li.medium a:hover {
+    background: rgba(33, 137, 22, .1)
+}
+
+.four-oh-four ul li.gmail a {
+    box-shadow: 0 0 0 1px rgba(212, 70, 56, .2)
+}
+
+.four-oh-four ul li.gmail a:hover {
+    background: rgba(212, 70, 56, .1)
+}
+
+.four-oh-four ul li.twitter a {
+    box-shadow: 0 0 0 1px rgba(0, 145, 255, .2)
+}
+
+.four-oh-four ul li.twitter a:hover {
+    background: rgba(0, 145, 255, .1)
+}
+
+.four-oh-four ul li.instagram a {
+    box-shadow: 0 0 0 1px rgba(198, 104, 207, .2)
+}
+
+.four-oh-four ul li.instagram a:hover {
+    background: rgba(198, 104, 207, .1)
+}
+
+.four-oh-four ul li a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    border-radius: 50%;
+    width: 48px;
+    height: 48px;
+    transition: background .2s ease-in-out, box-shadow .2s ease-in-out
+}
+
+@media (prefers-color-scheme:dark) {
+    .four-oh-four ul li a {
+        box-shadow: inset 0 0 0 1px hsla(0, 0%, 100%, .1);
+        background: hsla(0, 0%, 100%, .03)
+    }
+}
